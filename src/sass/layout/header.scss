@@ -1,0 +1,42 @@
+.header {
+  background-image: url("/svg/bg-pattern-intro.svg"), linear-gradient(hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 3rem 7rem 9rem 7rem;
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .menu {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+
+      & > * {
+        margin-right: 30px;
+      }
+
+      .subnav {
+        &-btn {
+          color: white;
+        }
+        &-content {
+          display: none;
+        }
+      }
+    }
+  }
+
+  h1 {
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+    font-size: 3rem;
+  }
+  p {
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+  }
+}
+

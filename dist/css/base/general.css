@@ -3,3 +3,8 @@
 body {
   font-family: 'Overpass', sans-serif;
 }
+
+/* line 7, src/sass/base/general.scss */
+p {
+  font-size: 16px;
+}

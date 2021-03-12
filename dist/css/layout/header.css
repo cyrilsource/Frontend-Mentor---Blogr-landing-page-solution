@@ -1,14 +1,4 @@
 /*! project-name v0.0.1 | (c) 2021 YOUR NAME | MIT License | http://link-to-your-git-repo.com */
-/* line 3, src/sass/base/general.scss */
-body {
-  font-family: 'Overpass', sans-serif;
-}
-
-/* line 7, src/sass/base/general.scss */
-p {
-  font-size: 16px;
-}
-
 /* line 1, src/sass/layout/header.scss */
 .header {
   background-image: url("/svg/bg-pattern-intro.svg"), -webkit-gradient(linear, left top, left bottom, from(#ff8f70), to(#ff3d54));

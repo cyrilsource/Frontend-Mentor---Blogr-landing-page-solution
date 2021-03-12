@@ -2,6 +2,11 @@
 /*## Colors
 
 //### Primary*/
+/* line 3, src/sass/base/general.scss */
+body {
+  font-family: 'Overpass', sans-serif;
+}
+
 /**
  * @section Base Styles
  */

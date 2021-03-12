@@ -1,0 +1,28 @@
+.future {
+  padding: 7rem 0rem 9rem 7rem;
+
+  h2 {
+    text-align: center;
+    color: hsl(208, 49%, 24%);
+    font-size: 2rem;
+  }
+
+  &-body {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    margin-top: -6rem;
+    justify-content: space-between;
+
+    &-texts {
+      width: 31rem;
+      min-width: 31rem;
+      margin-right: 45px;
+    }
+
+    img {
+      width: 600px;
+    }
+  }
+
+}

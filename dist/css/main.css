@@ -69,3 +69,42 @@ p {
   text-align: center;
   color: white;
 }
+
+/* line 1, src/sass/layout/future.scss */
+.future {
+  padding: 7rem 0rem 9rem 7rem;
+}
+
+/* line 4, src/sass/layout/future.scss */
+.future h2 {
+  text-align: center;
+  color: #1f3f5b;
+  font-size: 2rem;
+}
+
+/* line 10, src/sass/layout/future.scss */
+.future-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  margin-top: -6rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/* line 17, src/sass/layout/future.scss */
+.future-body-texts {
+  width: 31rem;
+  min-width: 31rem;
+  margin-right: 45px;
+}
+
+/* line 23, src/sass/layout/future.scss */
+.future-body img {
+  width: 600px;
+}

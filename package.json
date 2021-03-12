@@ -42,5 +42,8 @@
 		"autoprefixer": "9.6.1",
 		"gulp-svgmin": "2.1.0",
 		"browser-sync": "2.26.7"
+	},
+	"dependencies": {
+		"vue": "^2.6.12"
 	}
 }

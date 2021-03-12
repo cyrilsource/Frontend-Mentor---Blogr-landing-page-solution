@@ -3,15 +3,17 @@
  */
 
 body {
-	font-size: 125%;
-	margin: 0 auto;
-	max-width: 42em;
-	width: 88%;
+  margin: 0 auto;
+  width: 1440px;
+  background-color: hsl(210, 46%, 95%);
 }
 
-input,
-textarea,
-select,
-button {
-	font: inherit;
+h2, p, blockquote, span {
+	font-family: 'Barlow Semi Condensed', sans-serif;
 }
+
+p, span {
+  font-size: 13px;
+}
+
+

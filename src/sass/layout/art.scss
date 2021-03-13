@@ -1,0 +1,21 @@
+.art {
+  background-image: url("/svg/bg-pattern-circles.svg"), linear-gradient(hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+  background-position: left;
+  background-repeat: no-repeat;
+  padding: 0rem 7rem 0rem 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 250px;
+
+  &-text {
+    width: 26rem;
+    color: white;
+
+  }
+
+  img {
+    width: 600px;
+
+  }
+}

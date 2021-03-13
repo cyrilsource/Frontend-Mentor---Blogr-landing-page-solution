@@ -1,0 +1,73 @@
+/*! project-name v0.0.1 | (c) 2021 YOUR NAME | MIT License | http://link-to-your-git-repo.com */
+/* line 2, src/sass/components/buttons.scss */
+.log a {
+  text-decoration: none;
+  margin-right: 30px;
+  color: white;
+}
+
+/* line 7, src/sass/components/buttons.scss */
+.log a:nth-child(2) {
+  color: #ff3d54;
+  padding: 10px 20px;
+  margin: 4px 2px;
+  border-radius: 16px;
+  background-color: white;
+}
+
+/* line 14, src/sass/components/buttons.scss */
+.log a:nth-child(2):hover {
+  background-color: #ff7a85;
+  cursor: pointer;
+  color: white;
+}
+
+/* line 23, src/sass/components/buttons.scss */
+.call-to-action {
+  font-size: 14px;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 30px;
+}
+
+/* line 29, src/sass/components/buttons.scss */
+.call-to-action a {
+  text-decoration: none;
+  margin-right: 30px;
+  padding: 10px 20px;
+  margin: 4px 2px;
+  border-radius: 19px;
+  margin-right: 10px;
+}
+
+/* line 37, src/sass/components/buttons.scss */
+.call-to-action a:nth-child(1) {
+  color: #ff3d54;
+  background-color: white;
+}
+
+/* line 41, src/sass/components/buttons.scss */
+.call-to-action a:nth-child(1):hover {
+  background-color: #ff7a85;
+  cursor: pointer;
+  color: white;
+}
+
+/* line 48, src/sass/components/buttons.scss */
+.call-to-action a:nth-child(2) {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+/* line 53, src/sass/components/buttons.scss */
+.call-to-action a:nth-child(2):hover {
+  background-color: white;
+  cursor: pointer;
+  color: #ff3d54;
+}

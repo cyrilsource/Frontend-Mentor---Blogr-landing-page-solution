@@ -1,7 +1,7 @@
 /*! project-name v0.0.1 | (c) 2021 YOUR NAME | MIT License | http://link-to-your-git-repo.com */
 /* line 1, src/sass/layout/pc.scss */
 .pc {
-  padding: 14rem 7rem 9rem 0rem;
+  padding: 14rem 20rem 9rem 0rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10,8 +10,9 @@
           align-items: center;
   overflow: hidden;
   margin-top: -6rem;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 /* line 9, src/sass/layout/pc.scss */

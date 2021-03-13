@@ -160,20 +160,16 @@ p {
   margin-top: -1rem;
 }
 
-/* line 1, src/sass/layout/future.scss */
-.future {
-  padding: 7rem 0rem 9rem 7rem;
-}
-
-/* line 4, src/sass/layout/future.scss */
+/* line 3, src/sass/layout/future.scss */
 .future h2 {
   text-align: center;
   color: #1f3f5b;
   font-size: 2rem;
 }
 
-/* line 10, src/sass/layout/future.scss */
+/* line 9, src/sass/layout/future.scss */
 .future-body {
+  padding: 7rem 0rem 9rem 15rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -181,16 +177,16 @@ p {
       -ms-flex-align: center;
           align-items: center;
   overflow: hidden;
-  margin-top: -6rem;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  margin-top: -2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 /* line 17, src/sass/layout/future.scss */
 .future-body-texts {
-  width: 31rem;
-  min-width: 31rem;
+  width: 26rem;
+  min-width: 26rem;
   margin-right: 45px;
 }
 
@@ -205,15 +201,16 @@ p {
   background-image: url("/svg/bg-pattern-circles.svg"), linear-gradient(#2c2d3f, #3f4164);
   background-position: left;
   background-repeat: no-repeat;
-  padding: 0rem 7rem 0rem 7rem;
+  padding: 0rem 7rem 0rem 0rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 250px;
 }
 
@@ -225,12 +222,12 @@ p {
 
 /* line 17, src/sass/layout/art.scss */
 .art img {
-  width: 600px;
+  width: 400px;
 }
 
 /* line 1, src/sass/layout/pc.scss */
 .pc {
-  padding: 14rem 7rem 9rem 0rem;
+  padding: 14rem 20rem 9rem 0rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -239,8 +236,9 @@ p {
           align-items: center;
   overflow: hidden;
   margin-top: -6rem;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 /* line 9, src/sass/layout/pc.scss */

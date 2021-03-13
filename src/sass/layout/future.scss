@@ -1,5 +1,4 @@
 .future {
-  padding: 7rem 0rem 9rem 7rem;
 
   h2 {
     text-align: center;
@@ -8,15 +7,16 @@
   }
 
   &-body {
+    padding: 7rem 0rem 9rem 15rem;
     display: flex;
     align-items: center;
     overflow: hidden;
-    margin-top: -6rem;
-    justify-content: space-between;
+    margin-top: -2rem;
+    justify-content: center;
 
     &-texts {
-      width: 31rem;
-      min-width: 31rem;
+      width: 26rem;
+      min-width: 26rem;
       margin-right: 45px;
     }
 

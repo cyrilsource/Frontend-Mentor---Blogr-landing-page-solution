@@ -8,16 +8,18 @@
   }
 
   &-body {
-    padding: 0rem 0rem 9rem 15rem;
+    padding: 0rem 0rem 3rem 3rem;
     display: flex;
     align-items: center;
     overflow: hidden;
-    justify-content: center;
+    justify-content: space-around;
 
     &-texts {
-      width: $width-text;
-      min-width: $width-text;
-      margin-right: 45px;
+
+      p {
+        width: $width-text;
+      }
+
     }
 
     img {

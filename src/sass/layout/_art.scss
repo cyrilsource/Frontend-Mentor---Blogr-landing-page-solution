@@ -1,6 +1,7 @@
 .art {
   background-image: url("/svg/bg-pattern-circles.svg"), linear-gradient($very-dark-gray-blue, $very-dark-desaturated-blue);
-  background-position: left;
+  background-position-x: -200px, left;
+  background-position-y: -600px, top;
   background-repeat: no-repeat;
   padding: 0rem 7rem 0rem 0rem;
   display: flex;

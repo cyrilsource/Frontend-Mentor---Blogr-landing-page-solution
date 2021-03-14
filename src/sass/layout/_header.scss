@@ -1,9 +1,9 @@
 .header {
-  background-image: url("/svg/bg-pattern-intro.svg"), linear-gradient(to bottom left, $light-red, $very-light-red);
+  background-image: url("/svg/bg-pattern-intro.svg"), linear-gradient(to left, $light-red, $very-light-red);
   background-repeat: no-repeat;
-  background-position-x: -400px, left;
-  background-position-y: -1000px, top;
-  background-size: 250%;
+  background-position-x: -300px, left;
+  background-position-y: center;
+  background-size: 200%;
   padding: 3rem 7rem 3rem 7rem;
 
   .navbar {

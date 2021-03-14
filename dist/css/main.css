@@ -20,7 +20,7 @@ p {
 /* line 8, src/sass/components/_buttons.scss */
 .log a:nth-child(2) {
   color: #ff3d54;
-  padding: 10px 20px;
+  padding: 10px 16px;
   margin: 4px 2px;
   border-radius: 16px;
   background-color: white;
@@ -44,7 +44,7 @@ p {
 .call-to-action a {
   text-decoration: none;
   margin-right: 30px;
-  padding: 10px 20px;
+  padding: 10px 16px;
   margin: 4px 2px;
   border-radius: 19px;
   margin-right: 10px;
@@ -81,12 +81,12 @@ p {
 
 /* line 1, src/sass/layout/_header.scss */
 .header {
-  background-image: url("/svg/bg-pattern-intro.svg"), -webkit-gradient(linear, right top, left bottom, from(#ff3d54), to(#ff8f70));
-  background-image: url("/svg/bg-pattern-intro.svg"), linear-gradient(to bottom left, #ff3d54, #ff8f70);
+  background-image: url("/svg/bg-pattern-intro.svg"), -webkit-gradient(linear, right top, left top, from(#ff3d54), to(#ff8f70));
+  background-image: url("/svg/bg-pattern-intro.svg"), linear-gradient(to left, #ff3d54, #ff8f70);
   background-repeat: no-repeat;
-  background-position-x: -400px, left;
-  background-position-y: -1000px, top;
-  background-size: 250%;
+  background-position-x: -300px, left;
+  background-position-y: center;
+  background-size: 200%;
   padding: 3rem 7rem 3rem 7rem;
 }
 
@@ -254,7 +254,7 @@ p {
 
 /* line 19, src/sass/layout/_future.scss */
 .future-body-texts p {
-  width: 26rem;
+  width: 27rem;
 }
 
 /* line 25, src/sass/layout/_future.scss */
@@ -266,7 +266,8 @@ p {
 .art {
   background-image: url("/svg/bg-pattern-circles.svg"), -webkit-gradient(linear, left top, left bottom, from(#2c2d3f), to(#3f4164));
   background-image: url("/svg/bg-pattern-circles.svg"), linear-gradient(#2c2d3f, #3f4164);
-  background-position: left;
+  background-position-x: -200px, left;
+  background-position-y: -600px, top;
   background-repeat: no-repeat;
   padding: 0rem 7rem 0rem 0rem;
   display: -webkit-box;
@@ -280,13 +281,13 @@ p {
   height: 250px;
 }
 
-/* line 11, src/sass/layout/_art.scss */
+/* line 12, src/sass/layout/_art.scss */
 .art-text {
-  width: 26rem;
+  width: 27rem;
   color: white;
 }
 
-/* line 16, src/sass/layout/_art.scss */
+/* line 17, src/sass/layout/_art.scss */
 .art img {
   width: 400px;
 }
@@ -315,8 +316,8 @@ p {
 
 /* line 16, src/sass/layout/_pc.scss */
 .pc-texts {
-  width: 26rem;
-  min-width: 26rem;
+  width: 27rem;
+  min-width: 27rem;
 }
 
 /* line 21, src/sass/layout/_pc.scss */

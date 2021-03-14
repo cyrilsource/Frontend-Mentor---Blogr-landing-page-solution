@@ -11,9 +11,7 @@
       background-color: $white;
 
       &:hover {
-        background-color: $very-light-red;
-        cursor: pointer;
-        color: $white;
+        @include hover_button;
       }
     }
   }
@@ -36,9 +34,8 @@
       border: 2px solid $white;
 
       &:hover {
-        background-color: $very-light-red;
-        cursor: pointer;
-        color: $white;
+        @include hover_button;
+        border: none;
       }
     }
 
@@ -49,8 +46,8 @@
 
       &:hover {
         background-color: $white;
+        color: $light-red;
         cursor: pointer;
-        color: $very-light-red;
       }
     }
   }

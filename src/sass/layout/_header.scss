@@ -13,10 +13,25 @@
     font-weight: 600;
 
     .menu {
+      img {
+        margin-right: 30px;
+      }
       display: flex;
       align-items: center;
-      & > * {
+      & .subnav-btn {
         margin-right: 30px;
+        cursor: pointer;
+
+        & .arrow {
+          // https://stackoverflow.com/questions/4550069/span-with-background-image-and-no-content
+          display: inline-block;
+          background-image: url("/svg/icon-arrow-light.svg");
+          background-repeat: no-repeat;
+          background-position: center center;
+          width: 10px;
+          height: 7px;
+        }
+
       }
 
       .subnav {

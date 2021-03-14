@@ -1,22 +1,22 @@
 .future {
-
+  margin-top: 7rem;
   h2 {
     text-align: center;
-    color: hsl(208, 49%, 24%);
+    color: $very-dark-blue;
     font-size: 2rem;
+    margin-bottom: -3rem;
   }
 
   &-body {
-    padding: 7rem 0rem 9rem 15rem;
+    padding: 0rem 0rem 9rem 15rem;
     display: flex;
     align-items: center;
     overflow: hidden;
-    margin-top: -2rem;
     justify-content: center;
 
     &-texts {
-      width: 26rem;
-      min-width: 26rem;
+      width: $width-text;
+      min-width: $width-text;
       margin-right: 45px;
     }
 

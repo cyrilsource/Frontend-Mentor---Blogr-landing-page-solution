@@ -1,0 +1,59 @@
+.log {
+  a {
+    text-decoration: none;
+    margin-right: 30px;
+    color: $white;
+
+    &:nth-child(2) {
+      color: $light-red;
+      @include button;
+      border-radius: 16px;
+      background-color: $white;
+
+      &:hover {
+        background-color: $very-light-red;
+        cursor: pointer;
+        color: $white;
+      }
+    }
+  }
+}
+
+.call-to-action {
+  font-size: $text;
+  font-weight: 600;
+  margin-top: 30px;
+  a {
+    text-decoration: none;
+    margin-right: 30px;
+    @include button;
+    border-radius: 19px;
+    margin-right: 10px;
+
+    &:nth-child(1) {
+      color: $light-red;
+      background-color: $white;
+      border: 2px solid $white;
+
+      &:hover {
+        background-color: $very-light-red;
+        cursor: pointer;
+        color: $white;
+      }
+    }
+
+    &:nth-child(2) {
+      background-color: transparent;
+      border: 2px solid $white;
+      color: $white;
+
+      &:hover {
+        background-color: $white;
+        cursor: pointer;
+        color: $very-light-red;
+      }
+    }
+  }
+}
+
+

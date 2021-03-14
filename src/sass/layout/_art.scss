@@ -1,5 +1,5 @@
 .art {
-  background-image: url("/svg/bg-pattern-circles.svg"), linear-gradient(hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+  background-image: url("/svg/bg-pattern-circles.svg"), linear-gradient($very-dark-gray-blue, $very-dark-desaturated-blue);
   background-position: left;
   background-repeat: no-repeat;
   padding: 0rem 7rem 0rem 0rem;
@@ -9,13 +9,11 @@
   height: 250px;
 
   &-text {
-    width: 26rem;
-    color: white;
-
+    width: $width-text;
+    color: $white;
   }
 
   img {
     width: 400px;
-
   }
 }

@@ -7,6 +7,13 @@ body {
 /* line 7, src/sass/base/_general.scss */
 p {
   font-size: 14px;
+  color: #1f3f5b;
+}
+
+/* line 12, src/sass/base/_general.scss */
+h3 {
+  color: #1f3f5b;
+  margin-top: 3rem;
 }
 
 /* line 2, src/sass/components/_buttons.scss */
@@ -22,6 +29,8 @@ p {
   color: #ff3d54;
   padding: 10px 16px;
   margin: 4px 2px;
+  -webkit-transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
   border-radius: 16px;
   background-color: white;
 }
@@ -46,6 +55,8 @@ p {
   margin-right: 30px;
   padding: 10px 16px;
   margin: 4px 2px;
+  -webkit-transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
   border-radius: 19px;
   margin-right: 10px;
 }
@@ -235,13 +246,13 @@ p {
 .future h2 {
   text-align: center;
   color: #1f3f5b;
-  font-size: 2rem;
+  font-size: 1.7rem;
   margin-bottom: -3rem;
 }
 
 /* line 10, src/sass/layout/_future.scss */
 .future-body {
-  padding: 0rem 0rem 3rem 3rem;
+  padding: 0rem 3rem 3rem 9rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -249,18 +260,20 @@ p {
       -ms-flex-align: center;
           align-items: center;
   overflow: hidden;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: -5rem;
 }
 
-/* line 19, src/sass/layout/_future.scss */
-.future-body-texts p {
+/* line 18, src/sass/layout/_future.scss */
+.future-body-texts {
   width: 27rem;
 }
 
-/* line 25, src/sass/layout/_future.scss */
+/* line 22, src/sass/layout/_future.scss */
 .future-body img {
-  width: 600px;
+  max-width: 600px;
 }
 
 /* line 1, src/sass/layout/_art.scss */
@@ -270,16 +283,17 @@ p {
   background-position-x: -200px, left;
   background-position-y: -600px, top;
   background-repeat: no-repeat;
-  padding: 0rem 7rem 0rem 0rem;
+  padding: 0rem 12rem 3rem 7rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  height: 250px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 240px;
   border-radius: 0 70px 0;
 }
 
@@ -287,16 +301,25 @@ p {
 .art-text {
   width: 27rem;
   color: white;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin-top: 2.5rem;
 }
 
 /* line 18, src/sass/layout/_art.scss */
+.art-text p {
+  color: white;
+}
+
+/* line 23, src/sass/layout/_art.scss */
 .art img {
   width: 400px;
+  margin-top: 5rem;
 }
 
 /* line 1, src/sass/layout/_pc.scss */
 .pc {
-  padding: 12rem 10rem 0rem 0rem;
+  padding: 5rem 12rem 3rem 7rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -304,25 +327,75 @@ p {
       -ms-flex-align: center;
           align-items: center;
   overflow: hidden;
-  margin-top: -6rem;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-/* line 9, src/sass/layout/_pc.scss */
+/* line 8, src/sass/layout/_pc.scss */
 .pc h2 {
   text-align: center;
   color: #1f3f5b;
   font-size: 2rem;
 }
 
-/* line 16, src/sass/layout/_pc.scss */
+/* line 15, src/sass/layout/_pc.scss */
 .pc-texts {
   width: 27rem;
-  min-width: 27rem;
 }
 
-/* line 21, src/sass/layout/_pc.scss */
+/* line 19, src/sass/layout/_pc.scss */
 .pc img {
   width: 600px;
+}
+
+/* line 1, src/sass/layout/_footer.scss */
+.footer {
+  background-color: #25252d;
+  padding: 3rem 10rem 2rem 10rem;
+  color: white;
+  border-radius: 0px 70px 0px 0px;
+}
+
+/* line 6, src/sass/layout/_footer.scss */
+.footer img {
+  width: 75px;
+}
+
+/* line 9, src/sass/layout/_footer.scss */
+.footer .grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 4rem;
+}
+
+/* line 15, src/sass/layout/_footer.scss */
+.footer h4 {
+  font-size: 0.9rem;
+}
+
+/* line 19, src/sass/layout/_footer.scss */
+.footer ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 24, src/sass/layout/_footer.scss */
+.footer li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+/* line 29, src/sass/layout/_footer.scss */
+.footer li a {
+  font-size: 0.7rem;
+  text-decoration: none;
+  color: white;
+}
+
+/* line 33, src/sass/layout/_footer.scss */
+.footer li a:hover {
+  text-decoration: underline;
 }

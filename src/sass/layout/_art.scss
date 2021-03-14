@@ -3,19 +3,25 @@
   background-position-x: -200px, left;
   background-position-y: -600px, top;
   background-repeat: no-repeat;
-  padding: 0rem 7rem 0rem 0rem;
+  padding: 0rem 12rem 3rem 7rem;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  height: 250px;
+  justify-content: space-between;
+  height: 240px;
   border-radius: 0 $radius 0;
 
   &-text {
     width: $width-text;
     color: $white;
+    align-self: center;
+    margin-top: 2.5rem;
+    p {
+      color: $white;
+    }
   }
 
   img {
     width: 400px;
+    margin-top: 5rem;
   }
 }

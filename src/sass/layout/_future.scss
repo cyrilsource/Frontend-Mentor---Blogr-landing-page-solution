@@ -3,27 +3,24 @@
   h2 {
     text-align: center;
     color: $very-dark-blue;
-    font-size: 2rem;
+    font-size: 1.7rem;
     margin-bottom: -3rem;
   }
 
   &-body {
-    padding: 0rem 0rem 3rem 3rem;
+    padding: 0rem 3rem 3rem 9rem;
     display: flex;
     align-items: center;
     overflow: hidden;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-top: -5rem;
 
     &-texts {
-
-      p {
-        width: $width-text;
-      }
-
+       width: $width-text;
     }
 
     img {
-      width: 600px;
+      max-width: 600px;
     }
   }
 

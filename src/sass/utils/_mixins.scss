@@ -1,6 +1,7 @@
 @mixin button {
   padding: 10px 16px;
   margin: 4px 2px;
+  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 @mixin hover_button {

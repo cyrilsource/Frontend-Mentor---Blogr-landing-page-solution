@@ -88,9 +88,10 @@ p {
   background-position-y: center;
   background-size: 200%;
   padding: 3rem 7rem 3rem 7rem;
+  border-radius: 0 0 0 70px;
 }
 
-/* line 9, src/sass/layout/_header.scss */
+/* line 10, src/sass/layout/_header.scss */
 .header .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -105,7 +106,7 @@ p {
   color: white;
 }
 
-/* line 16, src/sass/layout/_header.scss */
+/* line 17, src/sass/layout/_header.scss */
 .header .navbar .menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -115,17 +116,17 @@ p {
           align-items: center;
 }
 
-/* line 17, src/sass/layout/_header.scss */
+/* line 18, src/sass/layout/_header.scss */
 .header .navbar .menu img {
   margin-right: 30px;
 }
 
-/* line 22, src/sass/layout/_header.scss */
+/* line 23, src/sass/layout/_header.scss */
 .header .navbar .menu .subnav {
   position: relative;
 }
 
-/* line 24, src/sass/layout/_header.scss */
+/* line 25, src/sass/layout/_header.scss */
 .header .navbar .menu .subnav-content {
   opacity: 0;
   position: absolute;
@@ -141,18 +142,18 @@ p {
   border-radius: 3px;
 }
 
-/* line 37, src/sass/layout/_header.scss */
+/* line 38, src/sass/layout/_header.scss */
 .header .navbar .menu .subnav-content a {
   color: #25252d;
   text-decoration: none;
 }
 
-/* line 41, src/sass/layout/_header.scss */
+/* line 42, src/sass/layout/_header.scss */
 .header .navbar .menu .subnav-content a:hover {
   font-weight: 600;
 }
 
-/* line 47, src/sass/layout/_header.scss */
+/* line 48, src/sass/layout/_header.scss */
 .header .navbar .menu .subnav-btn {
   margin-right: 30px;
   cursor: pointer;
@@ -162,7 +163,7 @@ p {
   transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-/* line 53, src/sass/layout/_header.scss */
+/* line 54, src/sass/layout/_header.scss */
 .header .navbar .menu .subnav-btn .arrow {
   display: inline-block;
   background-image: url("/svg/icon-arrow-light.svg");
@@ -175,24 +176,24 @@ p {
   transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-/* line 67, src/sass/layout/_header.scss */
+/* line 68, src/sass/layout/_header.scss */
 .header .navbar .menu .subnav:hover .subnav-btn {
   opacity: 1;
   text-decoration: underline;
 }
 
-/* line 71, src/sass/layout/_header.scss */
+/* line 72, src/sass/layout/_header.scss */
 .header .navbar .menu .subnav:hover .arrow {
   rotate: 180deg;
   opacity: 1;
 }
 
-/* line 75, src/sass/layout/_header.scss */
+/* line 76, src/sass/layout/_header.scss */
 .header .navbar .menu .subnav:hover .subnav-content {
   opacity: 1;
 }
 
-/* line 84, src/sass/layout/_header.scss */
+/* line 85, src/sass/layout/_header.scss */
 .header .center {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -210,14 +211,14 @@ p {
   height: 350px;
 }
 
-/* line 91, src/sass/layout/_header.scss */
+/* line 92, src/sass/layout/_header.scss */
 .header .center .title h1 {
   text-align: center;
   color: white;
   font-size: 3rem;
 }
 
-/* line 96, src/sass/layout/_header.scss */
+/* line 97, src/sass/layout/_header.scss */
 .header .center .title p {
   text-align: center;
   color: white;
@@ -279,15 +280,16 @@ p {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   height: 250px;
+  border-radius: 0 70px 0;
 }
 
-/* line 12, src/sass/layout/_art.scss */
+/* line 13, src/sass/layout/_art.scss */
 .art-text {
   width: 27rem;
   color: white;
 }
 
-/* line 17, src/sass/layout/_art.scss */
+/* line 18, src/sass/layout/_art.scss */
 .art img {
   width: 400px;
 }

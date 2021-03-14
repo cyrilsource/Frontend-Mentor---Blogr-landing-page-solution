@@ -10,7 +10,6 @@
     justify-content: space-between;
     font-size: $text;
     color: $white;
-    font-weight: 600;
 
     .menu {
       img {
@@ -18,29 +17,66 @@
       }
       display: flex;
       align-items: center;
-      & .subnav-btn {
-        margin-right: 30px;
-        cursor: pointer;
-
-        & .arrow {
-          // https://stackoverflow.com/questions/4550069/span-with-background-image-and-no-content
-          display: inline-block;
-          background-image: url("/svg/icon-arrow-light.svg");
-          background-repeat: no-repeat;
-          background-position: center center;
-          width: 10px;
-          height: 7px;
-        }
-
-      }
-
       .subnav {
+        position: relative;
         &-content {
-          display: none;
+          opacity: 0;
+          position: absolute;
+          right: 5px;
+          display: block;
+          background-color: $white;
+          padding: 1rem;
+          text-decoration: none;
+          line-height: 2;
+          transition: opacity 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+          width: 5rem;
+          border-radius: 3px;
+
+          a {
+            color: $very-dark;
+            text-decoration: none;
+
+            &:hover {
+              font-weight: 600;
+            }
+          }
+        }
+
+        &-btn {
+          margin-right: 30px;
+          cursor: pointer;
+          font-weight: 600;
+          opacity: 0.75;
+          transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+          & .arrow {
+            // https://stackoverflow.com/questions/4550069/span-with-background-image-and-no-content
+            display: inline-block;
+            background-image: url("/svg/icon-arrow-light.svg");
+            background-repeat: no-repeat;
+            background-position: center center;
+            width: 10px;
+            height: 7px;
+            margin-left: 4px;
+            transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+          }
+        }
+
+        &:hover {
+          & .subnav-btn {
+            opacity: 1;
+            text-decoration: underline;
+          }
+          & .arrow{
+            rotate: (180deg);
+            opacity: 1;
+          }
+          & .subnav-content {
+            opacity: 1;
+          }
         }
       }
-    }
 
+    }
   }
 
   .center {

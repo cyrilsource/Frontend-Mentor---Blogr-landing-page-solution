@@ -26,24 +26,34 @@
 
     .burger {
       display: none;
-
+      background-image: url('/svg/icon-hamburger.svg');
+      background-repeat: no-repeat;
+      width: 32px;
+      height: 18px;
+      transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
       @include mobile-large {
         display: block;
+      }
+      &.cross {
+        background-image: url('/svg/icon-close.svg');
+        width: 26px;
+      height: 26px;
       }
     }
 
     .nav-mobile {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       width: 100%;
+      transition: opacity 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
       @include mobile-large {
-        opacity: 0.5;
+        opacity: 0;
         position: absolute;
         flex-direction: column;
-        align-items: center;
         text-align: center;
+        justify-content: center;
         left: 50%;
-        top: 50%;
+        top: 130%;
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
         background-color: $white;
@@ -51,30 +61,52 @@
         width: 80%;
         color: $very-dark;
       }
+      &.fade-in {
+        opacity: 1;
+      }
       .menu {
         display: flex;
         align-items: center;
+        width: 100%;
         @include mobile-large {
           flex-direction: column;
+          justify-content: center;
+          border-bottom: 1px solid $grayish;
         }
         .subnav {
           position: relative;
           &-content {
             opacity: 0;
             position: absolute;
-            right: 5px;
             display: block;
             background-color: $white;
             padding: 1rem;
             text-decoration: none;
             line-height: 2;
-            transition: opacity 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            transition: all 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             width: 5rem;
             border-radius: 3px;
+            @include mobile-large {
+              position: relative;
+              display: none;
+              text-align: center;
+              margin: 0 auto;
+              background-color: $grayish-light;
+              list-style-type: none;
+              text-align: center;
+              font-size: 1rem;
+              transform: scaleY(0);
+              transform-origin: top;
+              padding: 1rem 6rem 1rem 6rem;
+
+            }
 
             a {
               color: $very-dark;
               text-decoration: none;
+              @include mobile-large {
+                color: $very-dark-grayish-blue;
+              }
 
               &:hover {
                 font-weight: 600;
@@ -88,6 +120,12 @@
             font-weight: 600;
             opacity: 0.75;
             transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+            @include mobile-large {
+              opacity: 1;
+              font-size: 1.3rem;
+              line-height: 2.5;
+              margin-right: 0;
+            }
             & .arrow {
               // https://stackoverflow.com/questions/4550069/span-with-background-image-and-no-content
               display: inline-block;
@@ -98,6 +136,9 @@
               height: 7px;
               margin-left: 4px;
               transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+              @include mobile-large {
+                background-image: url("/svg/icon-arrow-dark.svg");
+              }
             }
           }
 
@@ -105,6 +146,9 @@
             & .subnav-btn {
               opacity: 1;
               text-decoration: underline;
+              @include mobile-large {
+                text-decoration: none;
+              }
             }
             & .arrow{
               rotate: (180deg);
@@ -112,6 +156,11 @@
             }
             & .subnav-content {
               opacity: 1;
+              @include mobile-large {
+                display: block;
+                margin: 0 auto;
+                transform: scaleY(1);
+              }
             }
           }
         }

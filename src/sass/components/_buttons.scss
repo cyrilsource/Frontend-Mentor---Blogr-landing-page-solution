@@ -1,10 +1,14 @@
 .log {
   display: flex;
   @include mobile-large {
-    flex-direction: column;
+    display: block;
   }
   p {
     margin-right: 30px;
+    @include mobile-large {
+      margin-right: 0;
+      text-align: center;
+    }
     a {
       text-decoration: none;
       font-weight: 600;
@@ -13,6 +17,11 @@
     &:nth-child(1) a {
       color: $white;
       opacity: 0.75;
+      @include mobile-large {
+        color: $very-dark-blue;
+        font-size: 1.3rem;
+        opacity: 1;
+      }
 
       &:hover {
         opacity: 1;
@@ -20,11 +29,20 @@
       }
     }
 
-    &:nth-child(2) a {
+    &:nth-child(2) a{
       color: $light-red;
       @include button;
       border-radius: 16px;
       background-color: $white;
+      width: 100%;
+      white-space: nowrap;
+      @include mobile-large {
+        color: $white;
+        font-size: 1.1rem;
+        opacity: 1;
+        background-image: linear-gradient(to left, $light-red, $very-light-red);
+        width: 100%;
+      }
 
       &:hover {
         @include hover_button;

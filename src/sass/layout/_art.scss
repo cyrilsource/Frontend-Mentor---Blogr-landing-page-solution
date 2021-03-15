@@ -27,6 +27,7 @@
     h2 {
       @include mobile-large{
         font-size: 2.3rem;
+        line-height: 1.2;
       }
     }
     p {

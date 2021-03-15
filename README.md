@@ -1,201 +1,85 @@
-# Gulp Boilerplate [![Build Status](https://travis-ci.org/cferdinandi/gulp-boilerplate.svg)](https://travis-ci.org/cferdinandi/gulp-boilerplate)
+# Frontend Mentor - Blogr landing page solution
 
-A boilerplate for building web projects with [Gulp](https://gulpjs.com/). Uses Gulp 4.x.
+This is a solution to the [Blogr landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/blogr-landing-page-EX2RLAApP). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-**Features**
+## Table of contents
 
-- Concatenate, minify, and lint JavaScript.
-- Compile, minify, autoprefix, and lint Sass.
-- Optimize SVGs.
-- Copy static files and folders into your `dist` directory.
-- Automatically add headers and project details to JS and CSS files.
-- Create polyfilled and non-polyfilled versions of JS files.
-- Watch for file changes, and automatically recompile build and reload webpages.
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-**Gulp Boilerplate makes it easy to turn features on and off**, so you can reuse it for all of your projects without having to delete or modify tasks.
+**Note: Delete this note and update the table of contents based on what sections you keep.**
+
+## Overview
+
+### The challenge
+
+Users should be able to:
+
+- View the optimal layout for the site depending on their device's screen size
+- See hover states for all interactive elements on the page
+
+### Screenshot
+
+![](./screenshot.jpg)
+
+Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
+
+Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
+
+Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
+
+**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+
+### Links
+
+- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live Site URL: [Add live site URL here](http://www.cyrilbron.com)
+
+## My process
+
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Vanilla JS
 
 
+**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
-## Getting Started
-
-### Dependencies
-
-*__Note:__ if you've previously installed Gulp globally, run `npm rm --global gulp` to remove it. [Details here.](https://medium.com/gulpjs/gulp-sips-command-line-interface-e53411d4467)*
-
-Make sure these are installed first.
-
-- [Node.js](http://nodejs.org)
-- [Gulp Command Line Utility](http://gulpjs.com) `npm install --global gulp-cli`
-
-### Quick Start
-
-1. In bash/terminal/command line, `cd` into your project directory.
-2. Run `npm install` to install required files and dependencies.
-3. When it's done installing, run one of the task runners to get going:
-	- `gulp` manually compiles files.
-	- `gulp watch` automatically compiles files and applies changes using [BrowserSync](https://browsersync.io/) when you make changes to your source files.
-
-**Try it out.** After installing, run `gulp` to compile some test files into the `dist` directory. Or, run `gulp watch` and make some changes to see them recompile automatically.
-
-
-
-## Documentation
-
-Add your source files to the appropriate `src` subdirectories. Gulp will process and and compile them into `dist`.
-
-- JavaScript files in the `src/js` directory will be compiled to `dist/js`. Files in subdirectories under the `js` folder will be concatenated. For example, files in `js/detects` will compile into `detects.js`.
-- Files in the `src/sass` directory will be compiled to `dist/css`.
-- SVG files placed in the `src/svg` directory will be optimized with SVGO and compiled into `dist/svg`.
-- Files and folders placed in the `copy` directory will be copied as-is into the `dist` directory.
-
-### package.json
-
-The `package.json` file holds all of the details about your project.
-
-Some information is automatically pulled in from it and added to a header that's injected into the top of your JavaScript and CSS files.
-
-```json
-{
-	"name": "project-name",
-	"version": "0.0.1",
-	"description": "A description for your project.",
-	"main": "./dist/your-main-js-file.js",
-	"author": {
-		"name": "YOUR NAME",
-		"url": "http://link-to-your-website.com"
-	},
-	"license": "MIT",
-	"repository": {
-		"type": "git",
-		"url": "http://link-to-your-git-repo.com"
-	},
-	"devDependencies": {}
-}
-```
-
-*__Note:__ `devDependencies` are the dependencies Gulp uses. Don't change these or you'll break things. If any of the other fields are removed, make sure to remove reference to them in the Header (under `var banner` in `gulpfile.js`) or `gulp watch` won't run.*
-
-### JavaScript
-
-Put your JavaScript files in the `src/js` directory.
-
-Files placed directly in the `js` folder will compile directly to `dist/js` as both minified and unminified files. Files placed in subdirectories under `src/js` will also be concatenated into a single file. For example, files in `js/detects` will compile into `detects.js`.
-
-*__A note about polyfills:__ In subdirectories that contain files with the `.polyfill.js` suffix (for example, `_matches.polyfill.js`), two versions will be created: one with the polyfill files, and one without.*
-
-### Sass
-
-Put your [Sass](https://sass-lang.com/) files in the `src/sass` directory.
-
-Gulp generates minified and unminified CSS files. It also includes [autoprefixer](https://github.com/postcss/autoprefixer), which adds vendor prefixes for you.
-
-### SVGs
-
-Place SVG files in the `src/svg` directory.
-
-SVG files will be optimized with [SVGO](https://github.com/svg/svgo) and compiled into `dist/svg`.
-
-### Copy Files
-
-Files and folders placed in the `src/copy` directory will be copied as-is into `dist`.
-
-This is a great place to put HTML files, images, and pre-compiled assets.
+### What I learned
 
 
 
-## Options & Settings
-
-Gulp Boilerplate makes it easy to customize for projects without having to delete or modify tasks.
-
-Options and settings are located at the top of the `gulpfile.js`.
-
-### Settings
-
-Set features under the `settings` variable to `true` to turn them on (default), and `false` to turn them off.
-
-```js
-/**
- * Settings
- * Turn on/off build features
- */
-
-var settings = {
-	clean: true,
-	scripts: true,
-	polyfills: true,
-	styles: true,
-	svgs: true,
-	copy: true,
-	reload: true
-};
-```
-
-### Paths
-
-Adjust the `input` and `output` paths for all of the Gulp tasks under the `paths` variable. Paths are relative to the root project folder.
-
-```js
-/**
- * Paths to project folders
- */
-
-var paths = {
-	input: 'src/',
-	output: 'dist/',
-	scripts: {
-		input: 'src/js/*',
-		// polyfills: '!src/js/*.polyfill.js',
-		polyfills: '.polyfill.js',
-		output: 'dist/js/'
-	},
-	styles: {
-		input: 'src/sass/**/*.{scss,sass}',
-		output: 'dist/css/'
-	},
-	svgs: {
-		input: 'src/svg/*.svg',
-		output: 'dist/svg/'
-	},
-	copy: {
-		input: 'src/copy/*',
-		output: 'dist/'
-	},
-	reload: './dist/'
-};
-```
-
-### Header
-
-Gulp auto-injects a header into all of your JavaScript and CSS files with details from your `package.json` file.
-
-You can change what's included under the `banner` variable.
-
-```js
-/**
- * Template for banner to add to file headers
- */
-
-var banner = {
-	full:
-		'/*!\n' +
-		' * <%= package.name %> v<%= package.version %>\n' +
-		' * <%= package.description %>\n' +
-		' * (c) ' + new Date().getFullYear() + ' <%= package.author.name %>\n' +
-		' * <%= package.license %> License\n' +
-		' * <%= package.repository.url %>\n' +
-		' */\n\n',
-	min:
-		'/*!' +
-		' <%= package.name %> v<%= package.version %>' +
-		' | (c) ' + new Date().getFullYear() + ' <%= package.author.name %>' +
-		' | <%= package.license %> License' +
-		' | <%= package.repository.url %>' +
-		' */\n'
-};
-```
+### Continued development
 
 
 
-## License
+### Useful resources
 
-The code is available under the [MIT License](LICENSE.md).
+- [Example resource 1](https://www.w3schools.com/) - This helped me for XYZ reason.
+
+
+## Author
+
+- Website - [Add your name here](https://www.cyrilbron.com)
+- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/cyrilsource)
+- Twitter - [@yourusername](https://www.twitter.com/cyrilbron1)
+
+**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+
+## Acknowledgments
+
+This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+
+**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**

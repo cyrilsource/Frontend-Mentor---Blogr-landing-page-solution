@@ -6,80 +6,120 @@
   background-size: 200%;
   padding: 3rem 7rem 3rem 7rem;
   border-radius: 0 0 0 $radius;
+  @include mobile-large {
+    padding: 3rem 1rem 3rem 1rem;
+  }
 
   .navbar {
+    position: relative;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     font-size: $text;
     color: $white;
+    @include mobile-large {
+      justify-content: space-between;
+    }
 
-    .menu {
-      img {
-        margin-right: 30px;
+    .logo {
+      margin-right: 30px;
+    }
+
+    .burger {
+      display: none;
+
+      @include mobile-large {
+        display: block;
       }
+    }
+
+    .nav-mobile {
       display: flex;
-      align-items: center;
-      .subnav {
-        position: relative;
-        &-content {
-          opacity: 0;
-          position: absolute;
-          right: 5px;
-          display: block;
-          background-color: $white;
-          padding: 1rem;
-          text-decoration: none;
-          line-height: 2;
-          transition: opacity 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-          width: 5rem;
-          border-radius: 3px;
-
-          a {
-            color: $very-dark;
+      justify-content: space-between;
+      width: 100%;
+      @include mobile-large {
+        opacity: 0.5;
+        position: absolute;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        background-color: $white;
+        padding: 1rem;
+        width: 80%;
+        color: $very-dark;
+      }
+      .menu {
+        display: flex;
+        align-items: center;
+        @include mobile-large {
+          flex-direction: column;
+        }
+        .subnav {
+          position: relative;
+          &-content {
+            opacity: 0;
+            position: absolute;
+            right: 5px;
+            display: block;
+            background-color: $white;
+            padding: 1rem;
             text-decoration: none;
+            line-height: 2;
+            transition: opacity 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            width: 5rem;
+            border-radius: 3px;
 
-            &:hover {
-              font-weight: 600;
+            a {
+              color: $very-dark;
+              text-decoration: none;
+
+              &:hover {
+                font-weight: 600;
+              }
+            }
+          }
+
+          &-btn {
+            margin-right: 30px;
+            cursor: pointer;
+            font-weight: 600;
+            opacity: 0.75;
+            transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+            & .arrow {
+              // https://stackoverflow.com/questions/4550069/span-with-background-image-and-no-content
+              display: inline-block;
+              background-image: url("/svg/icon-arrow-light.svg");
+              background-repeat: no-repeat;
+              background-position: center center;
+              width: 10px;
+              height: 7px;
+              margin-left: 4px;
+              transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+            }
+          }
+
+          &:hover {
+            & .subnav-btn {
+              opacity: 1;
+              text-decoration: underline;
+            }
+            & .arrow{
+              rotate: (180deg);
+              opacity: 1;
+            }
+            & .subnav-content {
+              opacity: 1;
             }
           }
         }
 
-        &-btn {
-          margin-right: 30px;
-          cursor: pointer;
-          font-weight: 600;
-          opacity: 0.75;
-          transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
-          & .arrow {
-            // https://stackoverflow.com/questions/4550069/span-with-background-image-and-no-content
-            display: inline-block;
-            background-image: url("/svg/icon-arrow-light.svg");
-            background-repeat: no-repeat;
-            background-position: center center;
-            width: 10px;
-            height: 7px;
-            margin-left: 4px;
-            transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
-          }
-        }
-
-        &:hover {
-          & .subnav-btn {
-            opacity: 1;
-            text-decoration: underline;
-          }
-          & .arrow{
-            rotate: (180deg);
-            opacity: 1;
-          }
-          & .subnav-content {
-            opacity: 1;
-          }
-        }
       }
-
     }
+
+
   }
 
   .center {
@@ -93,6 +133,9 @@
         text-align: center;
         color: $white;
         font-size: 3rem;
+        @include mobile-large {
+          font-size: 2.3rem;
+        }
       }
       p {
         text-align: center;

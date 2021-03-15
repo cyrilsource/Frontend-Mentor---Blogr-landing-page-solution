@@ -7,9 +7,16 @@ body {
 p {
   font-size: $text;
   color: $very-dark-blue;
+  @include mobile-large {
+    font-size: 15px;
+    line-height: 1.6;
+  }
 }
 
 h3 {
   color: $very-dark-blue;
   margin-top: 3rem;
+  @include mobile-large {
+    font-size: 1.5rem;
+  }
 }

@@ -1,24 +1,26 @@
 .log {
-  a {
-    text-decoration: none;
+  display: flex;
+  @include mobile-large {
+    flex-direction: column;
+  }
+  p {
     margin-right: 30px;
-    font-weight: 600;
+    a {
+      text-decoration: none;
+      font-weight: 600;
+    }
 
-    &:nth-child(1) {
+    &:nth-child(1) a {
       color: $white;
       opacity: 0.75;
 
       &:hover {
         opacity: 1;
+        text-decoration: underline;
       }
     }
 
-    &:hover {
-     opacity: 1;
-     text-decoration: underline;
-    }
-
-    &:nth-child(2) {
+    &:nth-child(2) a {
       color: $light-red;
       @include button;
       border-radius: 16px;
@@ -29,6 +31,7 @@
       }
     }
   }
+
 }
 
 .call-to-action {

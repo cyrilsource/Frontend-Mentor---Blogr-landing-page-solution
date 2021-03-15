@@ -18,9 +18,22 @@
       margin-top: 5rem;
       padding: 0rem 3rem 5rem 9rem;
     }
+    @include ipad-only {
+      margin-top: 5rem;
+      padding: 0rem 0rem 5rem 1rem;
+    }
+    @include mobile-large {
+      flex-direction: column;
+      padding: 0rem 1rem 17rem 1rem;
+    }
 
     &-texts {
        width: $width-text;
+       @include mobile-large {
+        order: 1;
+        text-align: center;
+        width: 100%;
+      }
     }
 
     .img-desktop {

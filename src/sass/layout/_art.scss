@@ -12,19 +12,39 @@
   @include desktop-only{
     padding: 0rem 7rem 3rem 7rem;
   }
+  @include mobile-large{
+    padding: 0rem 1rem 3rem 1rem;
+    flex-direction: column;
+    height: 450px;
+
+  }
 
   &-text {
     width: $width-text;
     color: $white;
     align-self: center;
     margin-top: 2.5rem;
+    h2 {
+      @include mobile-large{
+        font-size: 2.3rem;
+      }
+    }
     p {
       color: $white;
     }
+    @include mobile-large{
+      text-align: center;
+      width: 100%;
+    }
+
   }
 
   img {
     width: 400px;
     margin-top: 5rem;
+    @include mobile-large{
+      margin-top: -13rem;
+      margin-bottom: -4rem;
+    }
   }
 }

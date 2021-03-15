@@ -9,6 +9,9 @@
   justify-content: space-between;
   height: 240px;
   border-radius: 0 $radius 0;
+  @include desktop-only{
+    padding: 0rem 7rem 3rem 7rem;
+  }
 
   &-text {
     width: $width-text;

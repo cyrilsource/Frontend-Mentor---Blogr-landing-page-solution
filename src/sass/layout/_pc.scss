@@ -1,9 +1,12 @@
 .pc {
   padding: 5rem 12rem 3rem 7rem;
   display: flex;
-    align-items: center;
-    overflow: hidden;
-    justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  justify-content: space-between;
+  @include desktop-only {
+    padding: 5rem 5rem 5rem 3rem;
+  }
 
   h2 {
     text-align: center;
@@ -16,8 +19,17 @@
     width: $width-text;
   }
 
-  img {
-    width: 600px;
+  .img-desktop {
+    max-width: 600px;
+    @include desktop-only {
+      display: none;
+    }
+  }
+  .img-mobile {
+    display: none;
+    @include desktop-only {
+      display: block;
+    }
   }
 
 

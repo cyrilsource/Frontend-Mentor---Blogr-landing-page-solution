@@ -2,8 +2,21 @@
   a {
     text-decoration: none;
     margin-right: 30px;
-    color: $white;
     font-weight: 600;
+
+    &:nth-child(1) {
+      color: $white;
+      opacity: 0.75;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    &:hover {
+     opacity: 1;
+     text-decoration: underline;
+    }
 
     &:nth-child(2) {
       color: $light-red;

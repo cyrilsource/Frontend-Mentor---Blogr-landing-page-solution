@@ -14,13 +14,26 @@
     overflow: hidden;
     justify-content: space-between;
     margin-top: -5rem;
+    @include desktop-only {
+      margin-top: 5rem;
+      padding: 0rem 3rem 5rem 9rem;
+    }
 
     &-texts {
        width: $width-text;
     }
 
-    img {
+    .img-desktop {
       max-width: 600px;
+      @include desktop-only {
+        display: none;
+      }
+    }
+    .img-mobile {
+      display: none;
+      @include desktop-only {
+        display: block;
+      }
     }
   }
 

@@ -34,4 +34,12 @@ $width-text: 27rem;
 $text: 14px;
 
 //background radius
+
 $radius: 70px;
+
+//responsive
+$breakpoints: (
+  mobile: 375px,
+  ipad: 896px,
+  desktop: 1440px
+);

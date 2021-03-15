@@ -9,3 +9,21 @@
   cursor: pointer;
   color: $white;
 }
+
+@mixin mobile-only {
+  @media screen and (max-width: map-get($breakpoints, mobile)){
+      @content;
+  }
+}
+
+@mixin ipad-only {
+  @media screen and (max-width: map-get($breakpoints, ipad)){
+      @content;
+  }
+}
+
+@mixin desktop-only {
+  @media screen and (max-width: map-get($breakpoints, desktop)){
+      @content;
+  }
+}
